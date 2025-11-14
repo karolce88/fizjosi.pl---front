@@ -1,0 +1,87 @@
+@use '../colors' as *;
+@use '../mixins' as *;
+
+.aboutme-main {
+	@include ptb100;
+	overflow: hidden;
+
+	.fizjo-slider2 {
+		padding-bottom: 0;
+	}
+}
+
+.fizjo-slider {
+	@include ptb90;
+	position: relative;
+	overflow: visible;
+
+	&__splide {
+		// width: 100vw;
+		// position: relative;
+		// left: 50%;
+		// right: 50%;
+		// margin-left: -50vw;
+		// margin-right: -50vw;
+		width: 100vw;
+		max-width: none;
+		margin-left: calc(50% - 50vw); /* wyrównuje do lewej krawędzi ekranu */
+		padding-left: calc(50vw - 600px); /* POZWALA wrócić do wrappera po lewej */
+	}
+
+	&__track {
+		cursor: grab;
+	}
+
+	&__slide {
+		// max-width: 275px;
+		border-radius: 8px;
+
+		@media (max-width: 576px) {
+			// max-width: 220px;
+			max-width: 70%;
+		}
+	}
+}
+
+.educations {
+	@include ptb90;
+	margin-top: 90px;
+	position: relative;
+	background-color: $blue-dark;
+}
+
+.educations-box {
+	color: $white;
+	display: flex;
+	flex: 1 0 0 0;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+	}
+
+	.offer-desc__h2 {
+		color: $white;
+	}
+
+	&__img {
+		width: 258px;
+		height: 216px;
+
+		@media (max-width: 768px) {
+			width: 180px;
+			height: 150px;
+		}
+	}
+
+	&__text {
+		@include text;
+
+		@media (max-width: 576px) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}

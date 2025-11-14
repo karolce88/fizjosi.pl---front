@@ -1,0 +1,147 @@
+@use '../colors' as *;
+@use '../mixins' as *;
+
+.price-offer {
+	@include ptb100;
+}
+
+.prices {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__header {
+		display: flex;
+		width: 100%;
+		background-color: $blue-dark;
+		padding: 10px 22px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+
+		@media (max-width: 768px) {
+			padding: 8px 14px;
+		}
+	}
+
+	&__name-head,
+	&__time-head,
+	&__price-head {
+		@include text-header-price-offer;
+		flex: 1;
+		white-space: nowrap;
+	}
+
+	&__value {
+		display: flex;
+	}
+
+	&__price-head {
+		margin-left: 72px;
+
+		@media (max-width: 768px) {
+			margin-left: 26px;
+		}
+
+		@media (max-width: 546px) {
+			margin-left: 16px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		width: 100%;
+		padding: 8px 22px;
+		border-left: 1px solid $blue-dark;
+		border-right: 1px solid $blue-dark;
+
+		@media (max-width: 768px) {
+			padding: 8px 14px;
+		}
+
+		&:last-of-type {
+			border-bottom: 1px solid $blue-dark;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			padding-bottom: 12px;
+		}
+	}
+
+	&__name,
+	&__time,
+	&__price {
+		@include text-price-offer;
+		flex: 1;
+		white-space: nowrap;
+	}
+
+	&__price,
+	&__price-head {
+		width: 68px;
+	}
+
+	&__value {
+		display: flex;
+	}
+
+	&__price {
+		margin-left: 72px;
+		display: flex;
+		justify-content: flex-end;
+
+		@media (max-width: 768px) {
+			margin-left: 26px;
+		}
+		@media (max-width: 546px) {
+			margin-left: 16px;
+		}
+	}
+
+	&__name {
+		white-space: wrap;
+		margin-right: 18px;
+
+      li {
+         margin-left: 25px;
+      }
+	}
+
+	&__bottom-box {
+		margin-bottom: 50px;
+		margin-top: 10px;
+	}
+
+	&__bottom-info {
+		padding-left: 20px;
+		@include text-price-offer;
+		font-size: 12px;
+
+		@media (max-width: 768px) {
+			padding-left: 14px;
+		}
+	}
+
+	&__bottom-schedule {
+		margin-left: 22px;
+		margin-top: 30px;
+		@include text-price-offer;
+
+		@media (max-width: 768px) {
+			margin-left: 14px;
+		}
+	}
+
+	&__bottom-schedule-head {
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+
+	&__bottom-schedule-inner {
+      max-width: 360px;
+		display: grid;
+		grid-template-columns: 1fr 1fr; 
+      gap: 3px;
+		align-items: center; 
+	}
+}

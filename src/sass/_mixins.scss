@@ -1,0 +1,170 @@
+@use './colors' as *;
+
+// FONTS:
+
+@mixin h1 {
+	font-family: 'PassionOne-Regular', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	color: $white;
+	line-height: 40px;
+	letter-spacing: 4px;
+
+	@media (max-width: 768px) {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	@media (max-width: 424px) {
+		font-size: 28px;
+		line-height: 28px;
+		letter-spacing: 3px;
+	}
+
+	@media (max-width: 363px) {
+		font-size: 26px;
+		line-height: 24px;
+		letter-spacing: 3px;
+	}
+}
+
+@mixin h2 {
+	font-family: 'MerriweatherSans-regular', sans-serif;
+	font-weight: 500;
+	font-size: 34px;
+	color: $black;
+
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
+}
+
+@mixin h3 {
+	font-family: 'MerriweatherSans-regular', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: $black;
+
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
+}
+
+@mixin header-footer-menu {
+	font-family: 'MerriweatherSans-regular', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: $white;
+}
+
+@mixin text {
+	font-size: 14px;
+	font-family: 'Poppins-Regular', sans-serif;
+	color: $white;
+	line-height: 23px;
+}
+
+@mixin text-header {
+	font-size: 14px;
+	font-family: 'Poppins-Regular', sans-serif;
+	color: $white;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+@mixin text-price-offer {
+	font-size: 14px;
+	font-family: 'Poppins-Regular', sans-serif;
+	color: $black;
+	font-weight: 400;
+	line-height: 21px;
+
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
+}
+
+@mixin text-header-price-offer {
+	font-size: 14px;
+	font-family: 'Poppins-Regular', sans-serif;
+	color: $white;
+	font-weight: 500;
+	line-height: 21px;
+
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
+}
+
+@mixin header-boxes {
+	font-size: 14px;
+	font-family: 'MerriweatherSans-Bold', sans-serif;
+	font-weight: 400;
+	color: $white;
+	line-height: 23px;
+}
+
+@mixin index-offer-boxes-header {
+	font-size: 18px;
+	font-family: 'MerriweatherSans-Bold', sans-serif;
+	font-weight: 400;
+	color: $black;
+}
+
+// PADDINGS FOR SECTIONS:
+
+@mixin ptb90 {
+	padding: 90px 0;
+
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+}
+
+@mixin ptb100 {
+	padding: 100px 0;
+
+		@media (max-width: 768px) {
+		padding: 70px 0;
+	}
+}
+
+@mixin pb90 {
+	padding-bottom: 90px;
+
+	@media (max-width: 768px) {
+		padding-bottom: 60px;
+	}
+}
+
+@mixin pb100 {
+	padding-bottom: 100px;
+
+		@media (max-width: 768px) {
+		padding-bottom: 70px;
+	}
+}
+
+@mixin pt90 {
+	padding-top: 90px;
+
+	@media (max-width: 768px) {
+		padding-top: 60px;
+	}
+}
+
+@mixin pt100 {
+	padding-top: 100px;
+
+		@media (max-width: 768px) {
+		padding-top: 70px;
+	}
+}
+
+@mixin mt90 {
+	margin-top: 90px;
+
+	@media (max-width: 768px) {
+		margin-top: 60px;
+	}
+}

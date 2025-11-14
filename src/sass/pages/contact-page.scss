@@ -1,0 +1,102 @@
+@use '../colors' as *;
+@use '../mixins' as *;
+
+.contact {
+	@include ptb100;
+}
+
+.contact-page {
+	display: flex;
+	flex-direction: row;
+	gap: 45px;
+
+   	@media (max-width: 1054px) {
+			flex-direction: column;
+         align-items: center;
+		}
+
+	&__map {
+		width: 100%;
+		max-width: 741px;
+		height: 397px;
+		border-radius: 8px;
+
+		@media (max-width: 1294px) {
+			max-width: 640px;
+		}
+
+		@media (max-width: 1204px) {
+			max-width: 580px;
+		}
+
+		@media (max-width: 1140px) {
+			max-width: 480px;
+		}
+      @media (max-width: 1054px) {
+         max-width: 100%;
+      }
+	}
+
+	&__box {
+		border: 1px solid $blue-dark;
+		padding: 24px 36px;
+		border-radius: 8px;
+
+      @media (max-width: 1054px) {
+			max-width: 462px;
+		}
+	}
+
+	&__text {
+		@include text;
+		color: $black;
+		margin-bottom: 20px;
+	}
+
+	&__data-box {
+		@include text;
+		color: $black;
+		display: flex;
+		gap: 35px;
+
+      @media (max-width: 515px) {
+         flex-direction: column;
+      }
+	}
+
+	&__data-company-name {
+		display: flex;
+		flex-direction: column;
+		gap: 13px;
+		max-width: 188px;
+	}
+
+	&__svg-icons {
+		width: 32px;
+		height: 32px;
+	}
+
+	&__data-contact {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+	}
+
+	&__data-phone,
+	&__data-contact-email {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+	}
+
+	&__data-tdn {
+		text-decoration: none;
+		color: $black;
+		transition: all 0.3s ease;
+		white-space: nowrap;
+
+		&:hover {
+			color: $blue-dark;
+		}
+	}
+}
