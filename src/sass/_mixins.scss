@@ -31,11 +31,11 @@
 @mixin h2 {
 	font-family: 'MerriweatherSans-regular', sans-serif;
 	font-weight: 500;
-	font-size: 34px;
+	font-size: 28px;
 	color: $black;
 
 	@media (max-width: 768px) {
-		font-size: 26px;
+		font-size: 22px;
 	}
 }
 
@@ -70,6 +70,14 @@
 	color: $white;
 	font-weight: 500;
 	line-height: 23px;
+}
+
+@mixin text-header-advantages {
+	font-size: 14px;
+	font-family: 'Poppins-Regular', sans-serif;
+	color: $black;
+	font-weight: 700;
+	line-height: 21px;
 }
 
 @mixin text-price-offer {
@@ -166,5 +174,21 @@
 
 	@media (max-width: 768px) {
 		margin-top: 60px;
+	}
+}
+
+@mixin mb90 {
+	margin-bottom: 90px;
+
+	@media (max-width: 768px) {
+		margin-bottom: 60px;
+	}
+}
+
+@mixin pt50 {
+	padding-top: 50px;
+
+	@media (max-width: 768px) {
+		padding-top: 20px;
 	}
 }

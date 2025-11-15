@@ -165,8 +165,11 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
-
 	gap: 50px;
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
 
 	@media (max-width: 992px) {
 		flex-direction: column-reverse;
@@ -190,6 +193,10 @@
 		}
 	}
 
+	&__txt-item-one-element {
+		margin-bottom: 20px !important;
+	}
+
 	&__img {
 		border-radius: 8px;
 
@@ -205,16 +212,21 @@
 	ul {
 		padding-left: 20px;
 	}
-	
+
 	li {
-		margin-bottom: 20px;
-		
+		margin-bottom: 6px;
+
 		&:last-of-type {
 			margin-bottom: 0;
 		}
 	}
-}
 
+	&__h3 {
+		@include h3;
+		color: $black;
+		margin-bottom: 14px;
+	}
+}
 
 .box-text-with-h3 {
 	padding: 30px 30px;
@@ -231,7 +243,12 @@
 	&__txt {
 		@include text;
 		color: $black;
+
+		&--txt {
+			margin-bottom: 20px !important;
+		}
 	}
+
 
 	&__h3 {
 		@include h3;
@@ -251,3 +268,51 @@
 		}
 	}
 }
+
+
+// advantages (zalety z SVG po lewej)
+
+.advantages {
+	@include mt90;
+	display: flex;
+	align-items: center;
+	gap: 100px;
+
+	@media (max-width: 992px) {
+		flex-direction: column;
+		gap: 20px;
+		align-items: flex-start;
+
+		svg {
+			align-self: center;
+			margin-bottom: 20px;
+		}
+	}
+	
+	&__h3 {
+		@include h3;
+		color: $black;
+		margin-bottom: 14px;
+	}
+
+	&__point {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 1px;
+
+		@include text-header-advantages;
+		color: $black;
+	}
+
+	&__list {
+		margin-bottom: 5px;
+
+		&--center {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
+}
+

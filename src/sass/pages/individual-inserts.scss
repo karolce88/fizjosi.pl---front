@@ -1,3 +1,99 @@
 @use '../colors' as *;
 @use '../mixins' as *;
 
+.individual-inserts {
+	@include ptb100;
+}
+
+.foot,
+.foot-diagnostisc {
+	@include mt90;
+}
+
+.benefit-icons-foot {
+	@include mt90;
+	position: relative;
+	background-color: $green;
+	overflow: visible;
+
+	&__h2-wrapper {
+		@media (min-width: 1301px) {
+			width: 100%;
+			max-width: 1288px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+	}
+
+	&__slider {
+		display: flex !important;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__splide {
+		@media (max-width: 1301px) {
+			position: relative;
+			width: 100vw;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw; // start od lewej krawędzi
+			margin-right: -50vw; // koniec na prawej krawędzi
+			padding: 0;
+		}
+	}
+}
+
+.individual {
+	@include pt50;
+
+	&__slide {
+		position: relative;
+		padding-bottom: 20%;
+
+		@media (max-width: 1199px) {
+			padding-bottom: 4%;
+		}
+
+		@media (max-width: 768px) {
+			padding-bottom: 10%;
+
+			&::after {
+				bottom: 12px;
+				right: 0%;
+				width: 180px;
+				height: 180px;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 20px;
+			right: 8%;
+			width: 260px;
+			height: 260px;
+			background-image: url('../img/icons/1.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: 0.8;
+		}
+	}
+
+	&__slide2 {
+		&::after {
+			background-image: url('../img/icons/2.svg');
+		}
+	}
+	&__slide3 {
+		&::after {
+			background-image: url('../img/icons/3.svg');
+		}
+	}
+	&__slide4 {
+		&::after {
+			background-image: url('../img/icons/4.svg');
+		}
+	}
+}

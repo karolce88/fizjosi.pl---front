@@ -3476,6 +3476,87 @@ document.addEventListener('DOMContentLoaded', function () {
       10000: {
         destroy: true,
       },
+      1199: {
+        destroy: false,
+      },
+      568: {
+        fixedWidth: '300px',
+      },
+      400: {
+        fixedWidth: '260px',
+      },
+    }, 
+  }).mount()
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#JS-splide-foot', {
+    type: 'loop',
+    perMove: 1,
+    gap: '10px',
+    padding: '1.5rem',
+    drag: 'free',
+    snap: true,
+    autoplay: true,
+    interval: 2600,
+    arrows: false,
+    trimSpace: false,
+    pagination: false,
+    fixedWidth: '233px', // stała szerokość slajdu
+    breakpoints: {
+      10000: {
+        destroy: true,
+      },
+      1301: {
+        destroy: false,
+      },
+    }, 
+  }).mount()
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#JS-splide-integration', {
+    type: 'slide',
+    perMove: 1,
+    gap: '10px',
+    padding: '1.7rem',
+    drag: 'free',
+    snap: true,
+    autoplay: true,
+    interval: 2600,
+    arrows: false,
+    trimSpace: false,
+    pagination: false,
+    fixedWidth: '294px',
+    breakpoints: {
+      10000: {
+        destroy: true,
+      },
+      1304: {
+        destroy: false,
+      },
+    }, 
+  }).mount()
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#JS-splide-integration-boexes', {
+    type: 'slide',
+    perMove: 1,
+    gap: '30px',
+    padding: '1.7rem', 
+    drag: 'free',
+    snap: true,
+    autoplay: false,
+    interval: 2600,
+    arrows: false,
+    trimSpace: false,
+    pagination: false,
+	 fixedWidth: '391px',
+	 breakpoints: {
+      10000: {
+        destroy: true,
+      },
       1200: {
         destroy: false,
       },
