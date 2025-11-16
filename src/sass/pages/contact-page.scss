@@ -10,10 +10,10 @@
 	flex-direction: row;
 	gap: 45px;
 
-   	@media (max-width: 1054px) {
-			flex-direction: column;
-         align-items: center;
-		}
+	@media (max-width: 1054px) {
+		flex-direction: column;
+		align-items: center;
+	}
 
 	&__map {
 		width: 100%;
@@ -32,9 +32,9 @@
 		@media (max-width: 1140px) {
 			max-width: 480px;
 		}
-      @media (max-width: 1054px) {
-         max-width: 100%;
-      }
+		@media (max-width: 1054px) {
+			max-width: 100%;
+		}
 	}
 
 	&__box {
@@ -42,7 +42,7 @@
 		padding: 24px 36px;
 		border-radius: 8px;
 
-      @media (max-width: 1054px) {
+		@media (max-width: 1054px) {
 			max-width: 462px;
 		}
 	}
@@ -59,9 +59,9 @@
 		display: flex;
 		gap: 35px;
 
-      @media (max-width: 515px) {
-         flex-direction: column;
-      }
+		@media (max-width: 515px) {
+			flex-direction: column;
+		}
 	}
 
 	&__data-company-name {

@@ -13,12 +13,50 @@ document.addEventListener('DOMContentLoaded', () => {
 	//     item.classList.remove('open');
 	//   });
 	// });
-
-	// ---------- Obsługa roku w footerze -----------
+	
+	// ---------- Handle of footer year -----------
 	const footerYear = document.querySelector('.JSyear')
 	const handleCurrentYear = () => {
 		const year = new Date().getFullYear()
 		footerYear.innerText = year
 	}
 	handleCurrentYear()
+	
+	
+	
+	const burgerBtn = document.querySelector('.JS-burger')
+	const mobileMenu = document.querySelector('.JS-mobile-container')
+
+
+
+
+	burgerBtn.addEventListener('click' , () => {
+		burgerBtn.classList.toggle('active')
+		mobileMenu.classList.toggle('show-mobile-menu')
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
 })
