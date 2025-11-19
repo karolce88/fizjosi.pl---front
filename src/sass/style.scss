@@ -6,6 +6,7 @@
 @use './base' as *;
 @use './colors' as *;
 @use './mixins' as *;
+@use './pages/rules+privacy-policy' as *;
 @use './pages/main-page' as *;
 @use './pages/contact-page' as *;
 @use './pages/price-offer' as *;
