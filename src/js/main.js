@@ -11,29 +11,52 @@ document.addEventListener('DOMContentLoaded', () => {
 	const mobileMenu = document.querySelector('.JSmobile-nav')
 	const mobileMenuLinks = document.querySelectorAll('.menu-item a')
 	const logo = document.querySelector('.JSlogo')
-	const body = document.body;
+	const body = document.body
 
 	const handleMobileMenu = () => {
-		burgerBtn.addEventListener('click', () => {
-			burgerBtn.classList.toggle('active')
-			mobileMenu.classList.toggle('show-mobile-menu')
+		const showNav = () => {
+			mobileMenu.classList.add('show-mobile-menu')
+			burgerBtn.classList.add('active') 
+		}
+
+		const hideNav = () => {
+			mobileMenu.classList.remove('show-mobile-menu')
+			burgerBtn.classList.remove('active') 
+		}
+
+		const overflowBody = () => {
 			body.classList.toggle('overflow-hidden-body')
+		}
+
+		burgerBtn.addEventListener('click', () => {
+			if (mobileMenu.classList.contains('show-mobile-menu')) {
+				hideNav()
+				overflowBody()
+			} else {
+				showNav()
+				overflowBody()
+			}
 		})
+
 		// close mobile menu after click on menu items
 		mobileMenuLinks.forEach((link) => {
 			link.addEventListener('click', () => {
 				if (mobileMenu.classList.contains('show-mobile-menu')) {
-					mobileMenu.classList.remove('show-mobile-menu')
+					hideNav()
+					overflowBody()
 				}
 			})
 		})
+
 		// close mobile menu after click on logo
 		logo.addEventListener('click', () => {
 			if (mobileMenu.classList.contains('show-mobile-menu')) {
-				mobileMenu.classList.remove('show-mobile-menu')
+				hideNav()
+				overflowBody()
 			}
 		})
 	}
+
 	handleMobileMenu()
 
 	const changeLogoHeightDuringScrol = () => {
@@ -92,10 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.addEventListener('scroll', onScroll, { passive: true })
 	}
 	handleNavDuringScroll()
-
-
-
-
 
 	// END
 })
