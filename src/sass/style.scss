@@ -1,20 +1,20 @@
-@use './colors' as *;
-@use './mixins' as *;
+@use './base' as *;
 @use './layout/assets' as *;
 @use './vendors/splide' as *;
-@use './layout/nav' as *;
 @use './layout/header' as *;
 @use './layout/footer' as *;
+@use './colors' as *;
+@use './mixins' as *;
 @use './pages/404' as *;
+@use './layout/nav' as *;
 @use './pages/rules-privacy-policy' as *;
+@use './pages/main-page' as *;
 @use './pages/contact-page' as *;
 @use './pages/price-offer' as *;
 @use './pages/aboutme' as *;
 @use './pages/physiotheraphy' as *;
 @use './pages/individual-inserts' as *;
 @use './pages/integration' as *;
-@use './pages/main-page' as *;
-@use './base' as *;
 
 
 @media (min-width: 576px) {} /*telefony*/
