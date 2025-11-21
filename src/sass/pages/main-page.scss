@@ -4,7 +4,7 @@
 .benefit-icons {
 	position: relative;
 	@include ptb90;
-	overflow: hidden;
+	// overflow: hidden;
 
 	&__slider {
 		display: flex !important;
@@ -44,7 +44,7 @@
 		}
 
 		img {
-			transition: all .3s ease;
+			transition: all 0.3s ease;
 		}
 
 		&:hover img {
@@ -250,7 +250,7 @@
 		border-radius: 8px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between
+		justify-content: space-between;
 	}
 
 	&__track {
