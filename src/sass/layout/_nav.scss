@@ -7,6 +7,58 @@
 	color: $blue-dark;
 }
 
+.social-bar {
+	&__social-box {
+		position: fixed;
+		right: -4px;
+		top: 25%;
+		background-color: $blue-darkest;
+		width: 36px;
+		height: 68px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+		transition: all 0.14s;
+		padding-right: 4px;
+		border-top: 1px solid $brown;
+		border-bottom: 1px solid $brown;
+		border-left: 1px solid $brown;
+		z-index: 15;
+
+		&:hover {
+			right: 0px;
+		}
+
+		svg path {
+			fill: $white;
+			transition: right 0.2s;
+		}
+
+		@media (max-width: 576px) {
+			top: 20%;
+			right: -4px;
+			width: 28px;
+			height: 58px;
+
+			&:hover {
+				right: -4px;
+			}
+
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	&__social-link {
+		margin-top: 5px;
+	}
+}
+
 .navigation-container {
 	position: fixed;
 	z-index: 10;
@@ -49,50 +101,6 @@
 			rgba(69, 123, 167, 0.75) 78%,
 			rgba(69, 123, 167, 0.95) 85%
 		);
-	}
-
-	&__social-box {
-		position: absolute;
-		right: -6px;
-		top: 350%;
-		background-color: $blue-darkest;
-		width: 36px;
-		height: 68px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		border-top-left-radius: 8px;
-		border-bottom-left-radius: 8px;
-		transition: all 0.2s ease;
-		padding-right: 4px;
-		border: 1px solid $brown;
-		z-index: 15;
-
-		&:hover {
-			right: -3px;
-		}
-
-		svg path {
-			fill: $white;
-			transition: right 0.2s;
-		}
-
-		@media (max-width: 576px) {
-			top: 140%;
-			right: -6px;
-			width: 28px;
-			height: 58px;
-
-			svg {
-				width: 16px;
-				height: 16px;
-			}
-		}
-	}
-
-	&__social-link {
-		margin-top: 5px;
 	}
 }
 
@@ -289,6 +297,8 @@
 		}
 	}
 }
+
+// my previous navigation
 
 // .navigation {
 // 	position: relative;
