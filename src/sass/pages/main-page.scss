@@ -45,6 +45,8 @@
 
 		img {
 			transition: all 0.3s ease;
+			width: auto;
+			height: 52px;
 		}
 
 		&:hover img {
@@ -89,6 +91,9 @@
 
 	&__img-item {
 		border-radius: 8px;
+		width: 587px;
+		max-width: 587px;
+		height: auto;
 	}
 
 	&__paragraph {

@@ -7,6 +7,16 @@
 	color: $blue-dark;
 }
 
+.custom-logo {
+	width: 236px;
+	max-width: 235px;
+	height: auto;
+
+	@media (max-width: 1300px) {
+		max-height: 70px;
+	}
+}
+
 .social-bar {
 	&__social-box {
 		position: fixed;
