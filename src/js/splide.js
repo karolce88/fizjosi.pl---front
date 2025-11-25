@@ -3284,292 +3284,301 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 // lanuching the carousels:---------------------------------------------------------------
 
-
 document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-main-page-benefit-icons', {
-		type: 'loop',
-		perMove: 1,
-		gap: '10px',
-		padding: '1.5rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '233px', // stała szerokość slajdu
-		breakpoints: {
-			10000: {
-				destroy: true,
+	const JSsplidemainpagebenefiticons = document.querySelector('#JS-splide-main-page-benefit-icons')
+	if (JSsplidemainpagebenefiticons) {
+		new Splide('#JS-splide-main-page-benefit-icons', {
+			type: 'loop',
+			perMove: 1,
+			gap: '10px',
+			padding: '1.5rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '233px', // stała szerokość slajdu
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1301: {
+					destroy: false,
+				},
 			},
-			1301: {
-				destroy: false,
-			},
-		},
-	}).mount()
-})
+		}).mount()
+	}
 
+	const JSsplidemainpageoffer = document.querySelector('#JS-splide-main-page-offer')
+	if (JSsplidemainpageoffer) {
+		new Splide('#JS-splide-main-page-offer', {
+			type: 'loop',
+			perMove: 1,
+			gap: '10px',
+			padding: '0rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '294px', // stała szerokość slajdu
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1304: {
+					destroy: false,
+				},
+			},
+		}).mount()
+	}
 
-// gggdfgfdgdfgdfg
+	const JSsplidemainpageopinions = document.querySelector('#JS-splide-main-page-opinions')
+	if (JSsplidemainpageopinions) {
+		new Splide('#JS-splide-main-page-opinions', {
+			type: 'loop',
+			perMove: 1,
+			gap: '30px',
+			padding: '1rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: true,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '350px', // stała szerokość slajdu
+			breakpoints: {
+				576: {
+					fixedWidth: '320px',
+				},
+				400: {
+					fixedWidth: '300px',
+				},
+				380: {
+					fixedWidth: '260px',
+				},
+			},
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-main-page-offer', {
-		type: 'loop',
-		perMove: 1,
-		gap: '10px',
-		padding: '0rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '294px', // stała szerokość slajdu
-		breakpoints: {
-			10000: {
-				destroy: true,
-			},
-			1304: {
-				destroy: false,
-			},
-		},
-	}).mount()
-})
+	const JSsplideaboutmepage1 = document.querySelector('#JS-splide-aboutme-page-1')
+	if (JSsplideaboutmepage1) {
+		new Splide('#JS-splide-aboutme-page-1', {
+			type: 'loop',
+			perMove: 1,
+			gap: '30px',
+			padding: '1rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			autoWidth: true,
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-main-page-opinions', {
-		type: 'loop',
-		perMove: 1,
-		gap: '30px',
-		padding: '1rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: true,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '350px', // stała szerokość slajdu
-		breakpoints: {
-			576: {
-				fixedWidth: '320px',
-			},
-			400: {
-				fixedWidth: '300px',
-			},
-			380: {
-				fixedWidth: '260px',
-			},
-		},
-	}).mount()
-})
+	const JSsplideaboutmepage2 = document.querySelector('#JS-splide-aboutme-page-2')
+	if (JSsplideaboutmepage2) {
+		new Splide('#JS-splide-aboutme-page-2', {
+			type: 'loop',
+			perMove: 1,
+			gap: '30px',
+			padding: '1rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			autoWidth: true,
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-aboutme-page-1', {
-		type: 'loop',
-		perMove: 1,
-		gap: '30px',
-		padding: '1rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		autoWidth: true,
-	}).mount()
-})
+	const JSsplidephysio1 = document.querySelector('#JS-splide-physio-1')
+	if (JSsplidephysio1) {
+		new Splide('#JS-splide-physio-1', {
+			type: 'slide',
+			perMove: 1,
+			gap: '30px',
+			padding: '1.7rem',
+			drag: 'free',
+			snap: true,
+			autoplay: false,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '391px',
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1200: {
+					destroy: false,
+				},
+				568: {
+					fixedWidth: '300px',
+				},
+				400: {
+					fixedWidth: '260px',
+				},
+			},
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-aboutme-page-2', {
-		type: 'loop',
-		perMove: 1,
-		gap: '30px',
-		padding: '1rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		autoWidth: true,
-	}).mount()
-})
+	const JSsplidephysio2 = document.querySelector('#JS-splide-physio-2')
+	if (JSsplidephysio2) {
+		new Splide('#JS-splide-physio-2', {
+			type: 'slide',
+			perMove: 1,
+			gap: '30px',
+			padding: '1.7rem',
+			drag: 'free',
+			snap: true,
+			autoplay: false,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '391px',
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1200: {
+					destroy: false,
+				},
+				568: {
+					fixedWidth: '300px',
+				},
+				400: {
+					fixedWidth: '260px',
+				},
+			},
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-physio-1', {
-		type: 'slide',
-		perMove: 1,
-		gap: '30px',
-		padding: '1.7rem',
-		drag: 'free',
-		snap: true,
-		autoplay: false,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '391px',
-		breakpoints: {
-			10000: {
-				destroy: true,
+	const JSsplidephysio3 = document.querySelector('#JS-splide-physio-3')
+	if (JSsplidephysio3) {
+		new Splide('#JS-splide-physio-3', {
+			type: 'slide',
+			perMove: 1,
+			gap: '30px',
+			padding: '1.7rem',
+			drag: 'free',
+			snap: true,
+			autoplay: false,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '391px',
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1199: {
+					destroy: false,
+				},
+				568: {
+					fixedWidth: '300px',
+				},
+				400: {
+					fixedWidth: '260px',
+				},
 			},
-			1200: {
-				destroy: false,
-			},
-			568: {
-				fixedWidth: '300px',
-			},
-			400: {
-				fixedWidth: '260px',
-			},
-		},
-	}).mount()
-})
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-physio-2', {
-		type: 'slide',
-		perMove: 1,
-		gap: '30px',
-		padding: '1.7rem',
-		drag: 'free',
-		snap: true,
-		autoplay: false,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '391px',
-		breakpoints: {
-			10000: {
-				destroy: true,
+	const JSsplidefoot = document.querySelector('#JS-splide-foot')
+	if (JSsplidefoot) {
+		new Splide('#JS-splide-foot', {
+			type: 'loop',
+			perMove: 1,
+			gap: '10px',
+			padding: '1.5rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '233px', // stała szerokość slajdu
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1301: {
+					destroy: false,
+				},
 			},
-			1200: {
-				destroy: false,
-			},
-			568: {
-				fixedWidth: '300px',
-			},
-			400: {
-				fixedWidth: '260px',
-			},
-		},
-	}).mount()
-})
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-physio-3', {
-		type: 'slide',
-		perMove: 1,
-		gap: '30px',
-		padding: '1.7rem',
-		drag: 'free',
-		snap: true,
-		autoplay: false,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '391px',
-		breakpoints: {
-			10000: {
-				destroy: true,
+	const JSsplideintegration = document.querySelector('#JS-splide-integration')
+	if (JSsplideintegration) {
+		new Splide('#JS-splide-integration', {
+			type: 'slide',
+			perMove: 1,
+			gap: '10px',
+			padding: '1.7rem',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '294px',
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1304: {
+					destroy: false,
+				},
 			},
-			1199: {
-				destroy: false,
-			},
-			568: {
-				fixedWidth: '300px',
-			},
-			400: {
-				fixedWidth: '260px',
-			},
-		},
-	}).mount()
-})
+		}).mount()
+	}
 
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-foot', {
-		type: 'loop',
-		perMove: 1,
-		gap: '10px',
-		padding: '1.5rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '233px', // stała szerokość slajdu
-		breakpoints: {
-			10000: {
-				destroy: true,
+	const JSsplideintegrationboexes = document.querySelector('#JS-splide-integration-boexes')
+	if (JSsplideintegrationboexes) {
+		new Splide('#JS-splide-integration-boexes', {
+			type: 'slide',
+			perMove: 1,
+			gap: '30px',
+			padding: '1.7rem',
+			drag: 'free',
+			snap: true,
+			autoplay: false,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '391px',
+			breakpoints: {
+				10000: {
+					destroy: true,
+				},
+				1200: {
+					destroy: false,
+				},
+				568: {
+					fixedWidth: '300px',
+				},
+				400: {
+					fixedWidth: '260px',
+				},
 			},
-			1301: {
-				destroy: false,
-			},
-		},
-	}).mount()
-})
-
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-integration', {
-		type: 'slide',
-		perMove: 1,
-		gap: '10px',
-		padding: '1.7rem',
-		drag: 'free',
-		snap: true,
-		autoplay: true,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '294px',
-		breakpoints: {
-			10000: {
-				destroy: true,
-			},
-			1304: {
-				destroy: false,
-			},
-		},
-	}).mount()
-})
-
-document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#JS-splide-integration-boexes', {
-		type: 'slide',
-		perMove: 1,
-		gap: '30px',
-		padding: '1.7rem',
-		drag: 'free',
-		snap: true,
-		autoplay: false,
-		interval: 2600,
-		arrows: false,
-		trimSpace: false,
-		pagination: false,
-		fixedWidth: '391px',
-		breakpoints: {
-			10000: {
-				destroy: true,
-			},
-			1200: {
-				destroy: false,
-			},
-			568: {
-				fixedWidth: '300px',
-			},
-			400: {
-				fixedWidth: '260px',
-			},
-		},
-	}).mount()
+		}).mount()
+	}
 })
