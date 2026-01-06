@@ -1,0 +1,21 @@
+.img-slider {
+	margin: 100px 0;
+	width: 100vw;
+	max-width: none;
+	margin-left: calc(50% - 50vw);
+	padding-left: calc(50vw - 620px);
+
+	@media (max-width: 1290px) {
+		padding-left: 20px;
+	}
+
+	&__slide {
+		height: 340px !important;
+		border-radius: 12px;
+		cursor: grab;
+		background-size: cover;
+		background-position: center; 
+		background-repeat: no-repeat; 
+      overflow: hidden;
+	}
+}

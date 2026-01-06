@@ -25,5 +25,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "nice-select2": "^2.2.0"
   }
 }

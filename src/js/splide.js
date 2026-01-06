@@ -3581,4 +3581,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		}).mount()
 	}
+
+	document.querySelectorAll('.JSimgSlider').forEach((slider) => {
+		new Splide(slider, {
+			type: 'loop',
+			perMove: 1,
+			gap: '16px',
+			drag: 'free',
+			snap: true,
+			autoplay: true,
+			interval: 2600,
+			arrows: false,
+			trimSpace: false,
+			pagination: false,
+			fixedWidth: '400px',
+			breakpoints: {
+				768: {
+					fixedWidth: '290px',
+				},
+			},
+		}).mount()
+	})
 })

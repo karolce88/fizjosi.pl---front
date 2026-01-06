@@ -7,6 +7,7 @@
 @use './mixins' as *;
 @use './pages/404' as *;
 @use './layout/nav' as *;
+@use './layout/slider-global' as *;
 @use './pages/rules-privacy-policy' as *;
 @use './pages/main-page' as *;
 @use './pages/contact-page' as *;
@@ -17,6 +18,9 @@
 @use './pages/integration' as *;
 
 
-@media (min-width: 576px) {} /*telefony*/
-@media (min-width: 768px) {} /*tablety*/
-@media (min-width: 992px) {} /*desktopy*/
+
+@media (max-width: 475px) {}   /* bardzo małe telefony */
+@media (min-width: 576px) {}   /* telefony */
+@media (min-width: 768px) {}   /* tablety */
+@media (min-width: 992px) {}   /* desktopy */
+@media (min-width: 1200px) {}  /* duże desktopy */
